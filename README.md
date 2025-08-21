@@ -8,9 +8,9 @@ that were used in the research reported on in the paper
 [Real-time solution of quadratic optimization problems with banded matrices and indicator variables](https://arxiv.org/abs/2405.03051) by Andres Gomez, Shaoning Han and Leonardo Lozano. 
 
 
-**Important: This code is being developed on an on-going basis at 
+<!--**Important: This code is being developed on an on-going basis at 
 https://github.com/agomez8/ddBanded. Please go there if you would like to
-get a more recent version or would like support**
+get a more recent version or would like support**-->
 
 ## Cite
 
