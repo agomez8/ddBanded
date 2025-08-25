@@ -97,7 +97,7 @@ where: "java  -cp ./dist/MINLPDD.jar minlpdd_ConsecutiveOnes.MINLPDDOnline" poin
 After solving an instance, the results are recorded in "./results/resultsOffline.csv" (for offline instances) and "./results/resultsOnline.csv" (for online instances). Each instance solved is added as a new row to these files. 
 
 For offline problems and method =0 (Mosek), each row is organized as follows:
-* Columns 1-8:  are the parameters used to generate the instance
+* Columns 1-8: Are the parameters used to generate the instance
 * Column 9: 0
 * Column 10: 0
 * Column 11: 0
@@ -114,8 +114,26 @@ For offline problems and method =0 (Mosek), each row is organized as follows:
 * Column 22: 0
 * Column 23: 0
 
+For offline problems and method =1 (Decision diagram), each row is organized as follows:
+* Columns 1-8: Are the parameters used to generate the instance
+* Column 9: Number of nodes in the decision diagram
+* Column 10: Number of arcs in the decision diagram
+* Column 11: Time to construct the decision diagram
+* Column 12: Time to solve a shortest path in the decision diagram (not including construction)
+* Column 13: Time to solve the SOCP hull relaxation in the decision diagram
+* Column 14: Objective value obtained by solving a shortest path in the decision diagram
+* Column 15: Objective value computed by retrieving the optimal discrete variables from the shortest path method, and computing the objective in closed form
+* Column 16: Objective value obtained from the SOCP hull relaxartion as reported by Mosek
+* Column 17: Objective value computed by retrieving the optimal discrete variables from the SOCP hull relaxation, and computing the objective in closed form
+* Column 18: 0
+* Column 19: 0  
+* Column 20: Maximum number of nodes per layer in the decision diagram
+* Column 21: Number of previous decisions m that a truncated decision diagram would have to remember
+* Column 22: Maximum number of nodes per layer 2^m of a truncated decision diagram
+* Column 23: Condition number of the matrix Q
+
 For online problems, each row is organized as follows:
-* Columns 1-8:  are the parameters used to generate the instance
+* Columns 1-8: Are the parameters used to generate the instance
 * Column 9: Number of nodes in the decision diagram
 * Column 10: Number of arcs in the decision diagram
 * Column 11: Time to construct the decision diagram
