@@ -41,7 +41,7 @@ Below is the BibTex for citing this snapshot of the repository.
 
 ```
 @misc{ddBanded,
-  author =        {Andres Gomez, Shaoning Han and Leonardo Lozano},
+  author =        {Andres Gomez and Shaoning Han and Leonardo Lozano},
   title =         {{Real-time solution of quadratic optimization problems with banded matrices and indicator variables}},
   year =          {2025},          
   url =           {https://github.com/agomez8/ddBanded},
