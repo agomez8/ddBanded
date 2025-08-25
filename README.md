@@ -59,7 +59,7 @@ The methods are implemented in Java and rely on the commercial solver Mosek. Exe
 
 ## Executing the code
 
-As a java code, the source code is precompiled and can be executed directly via file ./dist/MINLP.jar. Ensure to install Mosek and replace file mosek.jar in ./dist/lib with those obtaining from installing the software.
+As a java code, the source code is precompiled and can be executed directly via file ./dist/MINLP.jar. Ensure to install Mosek and replace file mosek.jar in ./dist/lib with the one obtained from installing the software.
 
 The code can be executed from the console. Files "runDD.bat" and "runDDOnline.bat" contain examples of how to execute the code in offline and online settings. 
 
