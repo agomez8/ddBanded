@@ -1,3 +1,4 @@
+[![Operations Research Journal Logo](https://orjournal.github.io/OperationsReseachHeader.jpg)](https://pubsonline.informs.org/journal/opre)
 
 # ddBanded
 
@@ -65,9 +66,9 @@ The code can be executed from the console. Files "runDD.bat" and "runDDOnline.ba
 
 An example command to execute the code to tackle an offline problem is
 ```
-java  -cp ./dist/MINLPDD.jar minlpdd_ConsecutiveOnes.MINLPDD ./data/daily_data_1990.csv 25 0.001 0.25 2 0 101 0
+java  -cp ../dist/MINLPDD.jar minlpdd_ConsecutiveOnes.MINLPDD ./data/daily_data_1990.csv 25 0.001 0.25 2 0 101 0
 ```
-where: "java  -cp ./dist/MINLP.jar" points to the direction of the executable jar file, and "minlpdd_ConsecutiveOnes.MINLPDD" is the class used to run offline instances. The rest of parameters are as follows:
+where: "java  -cp ../dist/MINLP.jar" points to the direction of the executable jar file, and "minlpdd_ConsecutiveOnes.MINLPDD" is the class used to run offline instances. The rest of parameters are as follows:
 * First parameter (./data/daily_data_1990.csv) is a path to the dataset to use
 * Second parameter (25) is the number of time periods to use
 * Third parameter (0.001) is the weight of the L0 parameter (objective cost for the discrete variables)
@@ -79,9 +80,9 @@ where: "java  -cp ./dist/MINLP.jar" points to the direction of the executable ja
 
 An example command to execute the code to simulate solution in an online setting is
 ```
-java  -cp ./dist/MINLPDD.jar minlpdd_ConsecutiveOnes.MINLPDDOnline ./data/daily_data_1990.csv 7022 0.001 0.25 2 0 200 101 1
+java  -cp ../dist/MINLPDD.jar minlpdd_ConsecutiveOnes.MINLPDDOnline ./data/daily_data_1990.csv 7022 0.001 0.25 2 0 200 101 1
 ```
-where: "java  -cp ./dist/MINLPDD.jar minlpdd_ConsecutiveOnes.MINLPDDOnline" points to the direction of the executable jar file, and "minlpdd_ConsecutiveOnes.MINLPDDOnline" is the class used to run online instances. The rest of parameters are as follows:
+where: "java  -cp ../dist/MINLPDD.jar minlpdd_ConsecutiveOnes.MINLPDDOnline" points to the direction of the executable jar file, and "minlpdd_ConsecutiveOnes.MINLPDDOnline" is the class used to run online instances. The rest of parameters are as follows:
 * First parameter (./data/daily_data_1990.csv) is a path to the dataset to use
 * Second parameter (7022) is the number of total time periods
 * Third parameter (0.001) is the weight of the L0 parameter (objective cost for the discrete variables)
